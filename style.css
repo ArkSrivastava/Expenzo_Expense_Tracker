@@ -1,0 +1,163 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Dark Mode Text Colors */
+.dark-mode h1, 
+.dark-mode h2 {
+    color: #00ffcc;
+}
+
+/* Title Styling */
+h1 {
+    font-family: "Audiowide", sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Dark Mode Title */
+.dark-mode h1 {
+    color: #00ffcc; /* Teal neon shade */
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 400px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+
+/* Dark Mode Container */
+.dark-mode .container {
+    background: #1e1e1e;
+    box-shadow: 0px 0px 15px rgba(0, 255, 204, 0.3); /* Soft glow effect */
+}
+
+/* Forms */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input, select, button {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Button Styles */
+button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
+}
+
+/* Dark Mode Button - Green for income & expense */
+.dark-mode button {
+    background-color: #28a745; /* Green */
+    color: #ffffff;
+}
+
+/* Hover Effects */
+button:hover {
+    opacity: 0.8;
+}
+
+/* Expense List */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #ddd;
+    padding: 12px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+/* Dark Mode Expense List */
+.dark-mode li {
+    background: #333;
+    color: #ffffff;
+}
+
+/* Chart Styling */
+#expense-chart {
+    max-width: 100%;
+    height: 250px;
+    margin-top: 20px;
+}
+
+/* Dark Mode Toggle Switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+    margin-bottom: 15px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 34px;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%;
+    transition: .4s;
+}
+
+/* Switch Active (Dark Mode) */
+input:checked + .slider {
+    background-color: #00ffcc;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
