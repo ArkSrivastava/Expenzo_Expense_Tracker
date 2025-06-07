@@ -114,6 +114,75 @@ li {
     margin-top: 20px;
 }
 
+/* AI Insights Styling */
+.ai-section {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #f0f8ff;
+    border-radius: 8px;
+    border-left: 4px solid #007bff;
+    text-align: left;
+}
+
+.dark-mode .ai-section {
+    background-color: #1a2327;
+    border-left: 4px solid #00ffcc;
+}
+
+.insight-box {
+    margin: 15px 0;
+    padding: 15px;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.dark-mode .insight-box {
+    background-color: #2a2a2a;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.prediction-list, .tips-list, .anomaly-list {
+    margin-top: 10px;
+    padding-left: 0;
+}
+
+.prediction-list li, .tips-list li {
+    padding: 8px 12px;
+    margin-bottom: 5px;
+    background-color: #e3f2fd;
+    border-radius: 4px;
+    display: block;
+    text-align: left;
+}
+
+.dark-mode .prediction-list li, 
+.dark-mode .tips-list li {
+    background-color: #333;
+}
+
+.anomaly-list li {
+    background-color: #ffebee;
+    border-left: 3px solid #f44336;
+}
+
+.dark-mode .anomaly-list li {
+    background-color: #3a2222;
+    border-left: 3px solid #ff5252;
+}
+
+/* Expense description style */
+li small {
+    display: block;
+    font-size: 12px;
+    color: #757575;
+    margin-top: 3px;
+}
+
+.dark-mode li small {
+    color: #aaa;
+}
+
 /* Dark Mode Toggle Switch */
 .switch {
     position: relative;
